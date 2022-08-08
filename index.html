@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WelikeFood</title>
+    <!-- Font awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/regular.min.css" integrity="sha512-YoxvmIzlVlt4nYJ6QwBqDzFc+2aXL7yQwkAuscf2ZAg7daNQxlgQHV+LLRHnRXFWPHRvXhJuBBjQqHAqRFkcVw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/svg-with-js.min.css" integrity="sha512-U7WyVKwgyoYSa+qowujpUQIH3omU6SlFFr8m6kiEuuM1lWqoiURgTNskMFEf1la4PDNQzMws/G1u0wKGNxVbcQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Js Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Css Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="b_respl b_sbText" onload="if(_w.lb)lb();">
+    
+    <header id="b_header">
+        <form action="" method="get" id="sb_form" class="hassbi hasmic">
+            <a href="" class="b_logoArea">
+                <h1 class="b_logo" title="Back to Bing search"></h1>
+            </a>
+            <div class="b_searchboxForm">
+                <input class="b_searchbox b_softkey" type="search" name="q" id="sb_form_q" aria-autocomplete="both" aria-label="Enter Your search here - Search suggestions will show as you type" aria-controls="sw_as">
+
+                <!-- la croix qui disparait -->
+                <div id="sb_clt" class="sb_clrhov" data-sbtips="Clear">
+                    <a href="javascript:void(0);" id="sw_clx" tabindex="0" aria-label="clear text" role="button">
+                        <div class="sw_close"></div>
+                    </a>
+                </div>
+                <!-- le clavier -->
+                <span id="vkeyIcon" data-sbtips="Search using an on-screen keyboard" class="vkeyRest">
+                    <div id="b_icon_keybord" class="sb_icon"></div>
+                </span>
+                <!-- le micro -->
+                <div class="mic_cont icon partner">
+                    <div id="vs_mic_icon" class="mic_icon sb_icon"></div>
+                    <div class="ovr_cont">
+                        <div class="b_icon tooltip" role="button" tabindex="0" aria-label="Search using voice" data-sbtipx="Search using voice" data-tooltip="Search using voice"></div>
+                    </div>
+                </div>
+                <!-- recherche a partie d'une image -->
+                <div id="sbiarea" data-priority="1" data-idprefix="sb" data-ptn="Images">
+                    <div id="sb_sbip" data-sbtip="Search using an image" data-lgdgevt="0" >
+                        <div id="sb_sbi" tabindex="0" role="button" data-scrtl="1" aria-label="Search using an image" aria-expanded="false" hsevt="1">
+                            <img  id="sbi_b" class="rms_img"  >
+                        </div>
+                    </div>
+                </div>
+                <div id="sbicom">
+                    <div id="sb_sbidialog" class="sbidialog sbifre"></div>
+                </div>
+                <!-- la loupe de recherche -->
+                <div id="sb_search">
+                    <a href="javascript:void(0);" tabindex="1">
+                        <div id="sb_go_par">
+                            <div id="b_icon_spyglass" class="sb_icon"></div>
+                        </div>
+                        <input type="submit" value="Search" class="b_searchboxSubmit" id="sb_form_go" name="go">
+                    </a>
+                </div>
+                <input type="hidden" name="qs" value="ds" id="sa_qs">
+                <input type="hidden" name="form" id="" value="QBIR">
+                <div id="sw_as"></div>
+            </div>
+        </form>
+        <!-- le button de connexion et le menu deroulant -->
+        <div id="id_h" role="complementary" aria-label="Account Rewards and Preferences">
+
+            <!-- el boutton de connexion -->
+            <a href="" id="id_l" class="id_button" aria-controls="id_d" href="javascript:void(0);" h="ID=images,5103.1">
+                <div>
+                    <span id="31821E_1_btn" class="cbtn" data-appns="images" data-k="5160.1">
+                        <input type="submit" name="submit" value="connexion" id="id_a" aria-label>
+                    </span>
+                </div>
+                <!-- celui la a le revoir -->
+                <span id="id_n" style="display:none" aria-hidden="true"></span>
+
+                <!-- le menu deroulant -->
+                <div class="btnsearch">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <!-- <a href="javascript:void(0);" h="ID=images,5109.1" id="id_sc" class="idp_ham nohphbtop" aria-expanded="false" aria-label="Settings and quick links"></a>
+
+                <span id="id_hbfo" class="nohpfo slide_up" aria-labelledby="id_sc" aria-modal="true" role="meun"> 
+                </span>-->
+            </a>
+        </div>
+        <nav class="b_scopebar" role="navigation" aria-label="Main menu">
+            <ul>
+                <li class="" data-menuurl="" id="b-scopeListItem-web">
+                    <a class="" target="_self" aria-current="false" href="https://www.bing.com/search?q=nourriture&FORM=HDRSC1" h="ID=images,5092.1">TOUT</a>
+                </li>
+
+                <li class=" b_active" data-menuurl="" id="b-scopeListItem-images">
+                    <a class="" target="_blank" aria-current="false" href="https://www.bing.com/images/search?q=nourriture&form=HDRSC2&first=1&tsc=ImageHoverTitle" h="ID=images,5093.1">IMAGES</a>
+                </li>
+
+                <li class="" data-menuurl="" id="b-scopeListItem-video">
+                    <a class="" target="_blank" aria-current="false" href="https://www.bing.com/news/search?q=nourriture&FORM=HDRSC6" h="ID=images,5094.1">ACTUALITES</a>
+                </li>
+
+                <li class="" data-menuurl="" id="b-scopeListItem-local">
+                    <a class="" target="_blank" aria-current="false" href="https://www.bing.com/videos/search?q=nourriture&FORM=HDRSC3" h="ID=images,5095.1">VIDEO</a>
+                </li>
+
+                <li class="" data-menuurl="" id="b-scopeListItem-news">
+                    <a class="" target="_blank" aria-current="false" href="https://www.bing.com/maps?q=nourriture&FORM=HDRSC4" h="ID=images,5096.1">CARTES</a>
+                </li>
+            </ul>
+            <!-- le coté droit de la navBarre -->
+            <span id="fltIdtCon">
+                <span class="ftrBRF">
+                    <ul class="ftrUl">
+                        <li class="ftrLi ">
+                            <span class="ftrSSL ftrP12" id="ftr_ss_l">filtre adulte:</span>
+                        </li>
+                        <li class="ftrLi">
+                            <span class="ftrH_MmVert ftrHL" id="ftr_ss_hl" tabindex="0" role="button" aria-controls="ftr_ss_d" aria-expanded="false" aria-labelledby="ftr_ss_hl ftr_ss_l">
+                                <span class="ftrTB ftrP11">Moderate
+                                    <span class="sw_ddbk ddbkl"></span>
+                                </span>
+                            </span>
+                        </li>
+                    </ul>
+                </span>
+                <span id="fltIdt">
+                    <span tabindex="0" id="fltIdtLnk" title="Show or hide filters" role="button"></span>
+                    <span id="fltIdtTit" class="fltIdtTit">Filter</span>
+                    <div class="filter">
+                        <i class="fa-solid fa-filter"></i>
+                    </div>
+                </span>
+            </span>
+        </nav>
+    </header>
+    <!-- <div class="b_content">
+        <div class="firstPart">
+            <div class="FirstPartzone">
+                <div class="element">
+                    <div class="img">
+                        <img src="/img/th1.jpg" alt="img">
+                    </div>
+                    <div class="writing">
+                            <strong>DESSIN</strong>
+                            NOURRITURE
+                    </div>
+                </div>
+
+                <div class="element">
+                    <div class="img">
+                        <img width="42px" height="42px" src="/img/th2.jpg" alt="img">
+                    </div>
+                    <div class="writing">
+                            <strong>DESSIN</strong>
+                            NOURRITURE
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="img">
+                        <img width="42px" height="42px" src="/img/th3.jpg" alt="img">
+                    </div>
+                    <div class="writing">
+                            <strong>DESSIN</strong>
+                            NOURRITURE
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="img">
+                        <img width="42px" height="42px" src="/img/th4.jpg" alt="img">
+                    </div>
+                    <div class="writing">
+                            <strong>DESSIN</strong>
+                            NOURRITURE
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="img">
+                        <img width="42px" height="42px" src="/img/th5.jpg" alt="img">
+                    </div>
+                    <div class="writing">
+                            <strong>DESSIN</strong>
+                            NOURRITURE
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="img">
+                        <img width="42px" height="42px" src="/img/th7.jpg" alt="img">
+                    </div>
+                    <div class="writing">
+                            <strong>DESSIN</strong>
+                            NOURRITURE
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="img">
+                        <img width="42px" height="42" src="/img/th8.jpg" alt="img">
+                    </div>
+                    <div class="writing">
+                            <strong>DESSIN</strong>
+                            NOURRITURE
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="img">
+                        <img width="42px" height="42px" src="/img/th9.jpg" alt="img">
+                    </div>
+                    <div class="writing">
+                            <strong>DESSIN</strong>
+                            NOURRITURE
+                        </div>
+                        </div>    
+                    </div>
+                </div> -->
+                <!--deuxieme partie image swiper-->
+	    <div class="swiper mySwiper">
+            <div class="swiper-wrapper" id="tout">
+              <div class="swiper-slide" id="rond"><a href="#"><img src="img/th9.jpg" width=65 height=60 /><div class="monté"><b style="font-family:'Segoe UI'">DESSIN</b><p style="font-family:'Segoe UI'">NOURRITURE</p></div></a></div>
+              <div class="swiper-slide" id="rond"><a href="#"><img src ="img/th5.jpg"width=65 height=60 /><div class="monté"><b style="font-family:'Segoe UI'">DESSIN</b><p style="font-family:'Segoe UI'">NOURRITURE</p></div></a></a></div>
+              <div class="swiper-slide" id="rond"><a href="#"><img src="img/th2.jpg" width=65 height=60 /><div class="monté"><b style="font-family:'Segoe UI'">DESSIN</b><p style="font-family:'Segoe UI'">NOURRITURE</p></div></a></a></div>
+              <div class="swiper-slide" id="rond"><a href="#"><img src="img/th4.jpg" width=65 height=60 /><div class="monté"><b style="font-family:'Segoe UI'">DESSIN</b><p style="font-family:'Segoe UI'">NOURRITURE</p></div></a></a></div>
+              <div class="swiper-slide" id="rond"><a href="#"><img src="img/th3.jpg" width=65 height=60 /><div class="monté"><b style="font-family:'Segoe UI'">DESSIN</b><p style="font-family:'Segoe UI'">NOURRITURE</p></div></a></a></div>
+              <div class="swiper-slide" id="rond"><a href="#"><img src="img/th6.jpg" width=65 height=60 /><div class="monté"><b style="font-family:'Segoe UI'">DESSIN</b><p style="font-family:'Segoe UI'">NOURRITURE</p></div></a></a></div>
+              <div class="swiper-slide" id="rond"><a href="#"><img src="img/th7.jpg" width=65 height=60 /><div class="monté"><b style="font-family:'Segoe UI'">DESSIN</b><p style="font-family:'Segoe UI'">NOURRITURE<p></div></a></a></div>
+              <div class="swiper-slide" id="rond"><a href="#"><img src="img/th2.jpg" width=65 height=60 /><div class="monté"><b style="font-family:'Segoe UI'">DESSIN</b><p style="font-family:'Segoe UI'">NOURRITURE</p></div></a></a></div>
+              <div class="swiper-slide" id="rond"><a href="#"><img src="img/th8.jpg" width=65 height=60/><div class="monté"><b style="font-family:'Segoe UI'">DESSIN</b><p style="font-family:'Segoe UI'">NOURRITURE</p></div></a></a></div>
+              <div class="swiper-slide" id="rond"><a href="#"><img src="img/th9.jpg" width=65 height=60 /><div class="monté"><b style="font-family:'Segoe UI'">DESSIN</b><p style="font-family:'Segoe UI'">NOURRITURE</p></div></a></a></div>
+              <div class="swiper-slide" id="rond"><a href="#"><img src="img/th7.jpg" width=65 height=60/><div class="monté"><b style="font-family:'Segoe UI'">DESSIN</b><p style="font-family:'Segoe UI'">NOURRITURE</div></a></a></div>
+              <div class="swiper-slide" id="rond"><a href="#"><img src="img/th2.jpg" width=65 height=60/><div class="monté"><b style="font-family:'Segoe UI'">DESSIN</b><p style="font-family:'Segoe UI'">NOURRITURE</p></div></a></a></div>
+              <div class="swiper-slide" id="rond"><a href="#"><img src="img/th4.jpg" width=65 height=60/><div class="monté"><b style="font-family:'Segoe UI'">DESSIN</b><p style="font-family:'Segoe UI'">NOURRITURE</p></div></a></a></div>
+              <div class="swiper-slide" id="rond"><a href="#"><img src="img/th6.jpg" width=65 height=60/><div class="monté"><b style="font-family:'Segoe UI'">DESSIN</b><p style="font-family:'Segoe UI'">NOURRITURE</p></div></a></a></div>
+              <div class="swiper-slide" id="rond"><a href="#"><img src="img/th5.jpg" width=65 height=60/><div class="monté"><b style="font-family:'Segoe UI'">DESSIN</b><p style="font-family:'Segoe UI'">NOURRITURE</p></div></a></a></div>
+              <div class="swiper-slide" id="rond"><a href="#"><img src="img/th9.jpg" width=65 height=60/><div class="monté"><b style="font-family:'Segoe UI'">DESSIN</b><p style="font-family:'Segoe UI'">NOURRITURE</div></a></a></div>
+              <div class="swiper-slide" id="rond"><a href="#"><img src="img/th3.jpg" width=65 height=60/><div class="monté"><b style="font-family:'Segoe UI'">DESSIN</b><p style="font-family:'Segoe UI'">NOURRITURE</div></a></a></div>
+              <div class="swiper-slide" id="rond"><a href="#"><img src="img/th8.jpg" width=65 height=60/><div class="monté"><b style="font-family:'Segoe UI'">DESSIN</b><p style="font-family:'Segoe UI'">NOURRITURE</p></div></a></a></div>
+              <div class="swiper-slide" id="rond"><a href="#"><img src="img/th2.jpg" width=65 height=60/><div class="monté"><b style="font-family:'Segoe UI'">DESSIN</b><p style="font-family:'Segoe UI'">NOURRITURE</p></div></a></a></div>
+              <div class="swiper-slide" id="rond"><a href="#"><img src="img/th4.jpg" width=65 height=60/><div class="monté"><b style="font-family:'Segoe UI'">DESSIN</b><p style="font-family:'Segoe UI'">NOURRITURE</p></div></a></a></div>
+              <div class="swiper-slide" id="rond"><a href="#"><img src="img/th7.jpg" width=65 height=60/><div class="monté"><b style="font-family:'Segoe UI'">DESSIN</b><p style="font-family:'Segoe UI'">NOURRITURE</p></div></a></a></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+    <section id="premier">
+      <div class="bloc1">
+         <a href="#">
+            <div class="contenair1">
+                <div class="titre">
+                    <p class="titre1">2345 X 7895 <SUP>.</SUP>jpg</p>
+                    <p class="titre2">Maximum</p>
+                </div>
+            </div>
+            <p class="titr">téléchager la nourriture pour fonds d'ecran</p>
+         </a>
+         <a href="#">
+            <div class="contenair2">
+                <div class="titre">
+                    <p class="titre1">2345 X 7895 <SUP>.</SUP>jpg</p>
+                    <p class="titre2">Maximum</p>
+                </div>
+            </div>
+            <p class="titr">téléchager la nourriture pour fonds d'ecran</p>
+            <p class="titr"></p>
+         </a>
+            <a href="#">
+                <div class="contenair3">
+                    <div class="titre">
+                        <p class="titre1">2345 X 7895 <SUP>.</SUP>jpg</p>
+                        <p class="titre2">Maximum</p>
+                    </div>
+                </div>
+            <p class="titr">téléchager la nourriture pour fonds d'ecran</p>
+            </a>
+            <a href="#">
+                <div class="contenair4">
+                    <div class="titre">
+                        <p class="titre1">2345 X 7658 <SUP>.</SUP>jpg</p>
+                        <p class="titre2">Maximum</p>
+                    </div>
+                </div>
+                <p class="titr">téléchager la nourriture pour fonds d'écran</p>
+            </a>
+        </div>
+    </section>
+    <section id="premier">
+        <div class="bloc1">
+            <a href="#">
+                <div class="contenair5">
+                    <div class="titre">
+                        <p class="titre1">2453 X 7474 <SUP>.</SUP>jpg</p>
+                        <p class="titre2">Maximum</p>
+                    </div>
+                </div>
+                <p class="titr">téléchager la nourriture pour fonds d'écran</p>
+            </a>
+            <a href="#">
+                <div class="contenair6">
+                    <div class="titre">
+                        <p class="titre1">6447 x 7483 <SUP>.</SUP>jpg</p>
+                        <p class="titre2">Maximum</p>
+                    </div>
+                </div>
+                <p class="titr">téléchager la nourriture pour fonds d'écran</p>
+            </a>
+            <a href="#">
+                <div class="contenair7">
+                    <div class="titre">
+                        <p class="titre1">7468 X 6575 <SUP>.</SUP>jpg</p>
+                        <P class="titre2">Maximum</P>
+                    </div>
+                </div>
+                <p class="titr">téléchager la nourritutre pour fonds d'écran</p>
+            </a>
+            <a href="#">
+                <div class="contenair8">
+                    <div class="titre">
+                        <p class="titre1">7468 X 6575 <SUP>.</SUP>jpg</p>
+                        <P class="titre2">Maximum</P>
+                    </div>
+                </div>
+                <p class="titr">téléchager la nourritutre pour fonds d'écran</p>
+             </div>
+            </a>  
+          </div>
+      </section>
+      <section id="premier">
+        <div class="bloc1">
+            <a href="#">
+                <div class="contenair9">
+                 <div class="titre">
+                    <p class="titre1">3432 x 4649 <SUP>.</SUP>jpg</p>
+                    <p class="titre2">Maximum</p>
+                 </div>
+                </div>
+                <p class="titr">téléchager la nourriture pour fonds d'ecran</p>
+            </a>
+            <a href="#">
+                <div class="contenair10">
+                    <div class="titre">
+                        <p class="titre1">6574 X 8578 <SUP>.</SUP>jpg</p>
+                        <p class="titre2">Maximum</p>
+                    </div>
+                </div>
+                <p class="titr">téléchager la nourriture pour fonds d'écran</p>
+            </a>
+             <a href="#">
+                <div class="contenair11">
+                    <div class="titre">
+                        <p class="titre1">7464 x 6544 <SUP>.</SUP>jpg</p>
+                        <p class="titre2">Maximum</p>
+                    </div>
+                </div>
+                <p class="titr">téléchager la nourriture pour fonds d'ecran</p>
+             </a>
+             <a href="#">
+                <div class="contenair12">
+                    <div class="titre">
+                         <p class="titre1">7637 X 7878 <SUP>.</SUP>jpg</p>
+                         <p class="titre2">Maximum</p>
+                    </div>
+                </div>
+                <p class="titr">téléchager la nourriture pour fonds d'ecran</p>
+             </a>
+          </div>
+      </section></a>
+           <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112372114-3"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-112372114-3');
+	</script>
+	    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 7,
+        spaceBetween: 3,
+        slidesPerGroup: 3,
+        loop: false,
+        loopFillGroupWithBlank: false,
+       
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>  
+</body>
+</html>
